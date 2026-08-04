@@ -54,3 +54,68 @@ for index, job_title in enumerate(top_titles):
 - **Data Engineers** are expected to possess more specialized technical skills than the other roles. Technologies such as **AWS, Azure, and Spark** appear frequently in job requirements, reflecting the infrastructure and big data responsibilities associated with the role.
 
 - **Data Analysts** are more likely to require **Excel** than **Python**, whereas the opposite is true for **Data Scientists**. This reflects the different responsibilities of each role. Data Analysts primarily focus on querying data, analyzing business performance, and creating reports and dashboards, while Data Scientists are expected to build predictive models and apply machine learning techniques, making programming skills more essential.
+
+
+## 3. How well Data Analysts are paid based on the job roles, and skills? ?
+
+**Review the complete technical analysis notebook:**
+
+[Salary_Analysis.ipynb](notebooks\Salary_Analysis.ipynb)
+
+### 1. Salary Analysis for Top six Data Jobs
+
+#### Visualize Data
+``` python 
+#plot
+sns.set_theme(style='ticks')
+sns.boxplot(data=df_US_top6j, x='salary_year_avg', y='job_title_short', order=job_order, color='royalblue' )
+
+# specifying labels and titles
+plt.title("Salary Distributions in the US ", weight='bold', fontsize=20)
+plt.xlabel('Yearly Salary (USD)',weight='bold' )
+plt.ylabel("")
+plt.xlim(0, 600000)
+ax=plt.gca()
+ax.xaxis.set_major_formatter(plt.FuncFormatter(lambda x, pos: f"${int(x/1000)}K"))
+plt.tight_layout()
+plt.show()
+```
+
+#### Results
+
+![Skill Demand for Top 3 Data Roles](images\NB3\Salary_dist_top_titles.png)
+
+
+#### Insights
+- 
+- 
+- 
+
+### 2. Salary Analysis for Top six Data Jobs
+
+#### Visualize Data
+``` python 
+#plot
+sns.set_theme(style='ticks')
+sns.boxplot(data=df_US_top6j, x='salary_year_avg', y='job_title_short', order=job_order, color='royalblue' )
+
+# specifying labels and titles
+plt.title("Salary Distributions in the US ", weight='bold', fontsize=20)
+plt.xlabel('Yearly Salary (USD)',weight='bold' )
+plt.ylabel("")
+plt.xlim(0, 600000)
+ax=plt.gca()
+ax.xaxis.set_major_formatter(plt.FuncFormatter(lambda x, pos: f"${int(x/1000)}K"))
+plt.tight_layout()
+plt.show()
+```
+
+#### Results
+
+![Skill Demand for Top 3 Data Roles](images\NB3\Salary_dist_top_titles.png)
+
+
+#### Insights
+- 
+- 
+- 
