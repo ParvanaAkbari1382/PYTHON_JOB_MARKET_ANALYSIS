@@ -1,19 +1,13 @@
-
-
-
-
-
 # Analysis Process
 
 ## 1. What are the most demanded skills for the top 3 most popular data roles?
-
 To better understand the current job market, I filtered the dataset to include only job postings from the United States. I then identified the three most common data roles and extracted the five most frequently requested skills for each role. This analysis highlights the key skills candidates should prioritize based on the career path they want to pursue.
 
 **Review the complete technical analysis notebook:**
 
-[Skill_Demand.ipynb](notebooks/Skill_Demand.ipynb)
+[1_Skill_Demand.ipynb](notebooks\2_Skill_Demand.ipynb)
 
-## Visualize Data
+### Visualize Data
 
 ```python
 for index, job_title in enumerate(top_titles):
@@ -40,7 +34,6 @@ for index, job_title in enumerate(top_titles):
     if index != 2:
         ax[index].set_xticks([])
 ```
-
 ### Results
 
 ![Skill Demand for Top 3 Data Roles](images/NB2/skill_demand_data_roles.png)
@@ -55,67 +48,111 @@ for index, job_title in enumerate(top_titles):
 
 - **Data Analysts** are more likely to require **Excel** than **Python**, whereas the opposite is true for **Data Scientists**. This reflects the different responsibilities of each role. Data Analysts primarily focus on querying data, analyzing business performance, and creating reports and dashboards, while Data Scientists are expected to build predictive models and apply machine learning techniques, making programming skills more essential.
 
+---
 
-## 3. How well Data Analysts are paid based on the job roles, and skills? ?
+## 2. What are the most demanded skills for the top 3 most popular data roles? 
+overview:......
 
 **Review the complete technical analysis notebook:**
+[2_Skill_Trend.ipynb](notebooks\3_Skill_Trend.ipynb)
+### Visualize Data
 
-[Salary_Analysis.ipynb](notebooks\Salary_Analysis.ipynb)
+```python
+# Your plotting code
+```
 
-### 1. Salary Analysis for Top six Data Jobs
+### Results
+
+![Chart Title](images\NB3\Skill_trend_data_analysts.png)
+
+### Insights
+
+- 
+- 
+- 
+- 
+
+---
+## 3. How well are Data Analysts paid based on job roles and skills?
+**Review the complete technical analysis notebook:**
+
+[Salary_Analysis.ipynb](notebooks/4_Salary_Analysis.ipynb)
+
+---
+### 1. Salary Distribution Across the Top Six Data Roles
+#### Objective
+
+Compare the salary distributions of the six most common data-related job roles in the United States to understand differences in salary ranges, medians, and variability.
 
 #### Visualize Data
-``` python 
-#plot
-sns.set_theme(style='ticks')
-sns.boxplot(data=df_US_top6j, x='salary_year_avg', y='job_title_short', order=job_order, color='royalblue' )
 
-# specifying labels and titles
-plt.title("Salary Distributions in the US ", weight='bold', fontsize=20)
-plt.xlabel('Yearly Salary (USD)',weight='bold' )
-plt.ylabel("")
-plt.xlim(0, 600000)
-ax=plt.gca()
-ax.xaxis.set_major_formatter(plt.FuncFormatter(lambda x, pos: f"${int(x/1000)}K"))
-plt.tight_layout()
-plt.show()
+```python
+# Add your plotting code here
 ```
 
 #### Results
 
-![Skill Demand for Top 3 Data Roles](images\NB3\Salary_dist_top_titles.png)
-
+![Salary Distribution for Top Data Roles](images/NB4/Salary_dist_top_titles.png)
 
 #### Insights
-- 
-- 
-- 
 
-### 2. Salary Analysis for Top six Data Jobs
+- Highest median salary:
+- Lowest median salary:
+- Roles with the widest salary range:
+- Roles with the narrowest salary range:
+- Presence of outliers:
+- Key takeaway:
+
+---
+
+### 2. Highest Paid and Most Demanded Skills for Data Analysts
+
+#### Objective
+
+Compare the most in-demand Data Analyst skills with their median salaries to identify skills that offer the best combination of demand and compensation.
 
 #### Visualize Data
-``` python 
-#plot
-sns.set_theme(style='ticks')
-sns.boxplot(data=df_US_top6j, x='salary_year_avg', y='job_title_short', order=job_order, color='royalblue' )
 
-# specifying labels and titles
-plt.title("Salary Distributions in the US ", weight='bold', fontsize=20)
-plt.xlabel('Yearly Salary (USD)',weight='bold' )
-plt.ylabel("")
-plt.xlim(0, 600000)
-ax=plt.gca()
-ax.xaxis.set_major_formatter(plt.FuncFormatter(lambda x, pos: f"${int(x/1000)}K"))
-plt.tight_layout()
-plt.show()
+```python
+# Add your plotting code here
 ```
 
 #### Results
 
-![Skill Demand for Top 3 Data Roles](images\NB3\Salary_dist_top_titles.png)
-
+![Highest Paid and Most Demanded Skills](images/NB4/Skill_count_med_salary.png)
 
 #### Insights
+
+- Highest-paying skill:
+- Most demanded skill:
+- Skills that provide both high demand and high salary:
+- Interesting observations:
+- Key takeaway:
+
+---
+
+## 4. Your Analysis Question
+
+Briefly explain what this analysis aims to investigate and why it is important.
+
+**Review the complete technical analysis notebook:**
+[5_Optimal_Skills.ipynb](notebooks\5_Optimal_Skills.ipynb)
+
+### Visualize Data
+
+```python
+# Your plotting code
+```
+
+### Results
+
+![Chart Title](images/Folder_Name/chart_name.png)
+
+### Insights
+
 - 
 - 
 - 
+- 
+
+---
