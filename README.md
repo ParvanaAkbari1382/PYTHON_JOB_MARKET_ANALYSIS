@@ -82,7 +82,7 @@ for i in range(5):
 plt.show()
 ```
 ### Results
-![Trending Top Skills for Data Scientists in the US](images/NB3/Skill_trend_data_scientst.png)
+![Trending Top Skills for Data Scientists in the US](images\NB3\Skill_trend_data_scientist.png)
 
 ### Insights
 
