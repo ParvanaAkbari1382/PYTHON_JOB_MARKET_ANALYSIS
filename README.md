@@ -57,6 +57,7 @@ To analyze skill trends throughout 2023, the dataset was first filtered to inclu
 The job posting date was then used to extract the posting month, and the frequency of each skill was calculated for every month. Instead of using raw counts, the percentage of job postings containing each skill was computed. This normalization accounts for differences in the total number of job postings each month, making it easier to compare skill demand over time and identify the most valuable skills to learn for those who want to become Data Scientist.
 
 **Review the complete technical analysis notebook:**
+
 [2_Skill_Trend.ipynb](notebooks\3_Skill_Trend.ipynb)
 ### Visualize Data
 ```python
@@ -81,7 +82,7 @@ for i in range(5):
 plt.show()
 ```
 ### Results
-![Chart Title](images\NB3\Skill_trend_data_analysts.png)
+![Trending Top Skills for Data Scientists in the US](images/NB3/Skill_trend_data_scientst.png)
 
 ### Insights
 
